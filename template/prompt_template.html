@@ -1,0 +1,77 @@
+<html>
+  <body>
+    <h1>GitHub Activity Report for {username}</h1>
+
+    <p>
+      As an AI assistant, generate a detailed weekly report in Markdown format
+      for the GitHub user {username} for the period from {start_date} to
+      {end_date}. The user made a total of {total_commits} commits and
+      {total_prs} pull requests across multiple repositories. Here's a summary
+      of their pull request activity:
+    </p>
+
+    {pr_summary_html}
+
+    <p>
+      Based on this information, please provide an HTML-formatted report with
+      the following sections:
+    </p>
+
+    <h2>Weekly GitHub Activity Report for {username}</h2>
+
+    <h3>{start_date} to {end_date}</h3>
+
+    <h3>List of PRs</h3>
+
+    [List all PRs in the format provided above]
+    <ul>
+      <li>
+        [PR Title 1] [PR Number](PR Link)
+        <ul></ul>
+          <li>Description: [Summary that describe the PR changes]</li>
+          <li>Status: [deployed to dev, in review, or other relevant status]</li>
+          <li>Key Changes Implemented
+            <ul>
+              <li>[List key points of changes from commit messages]</li>
+            </ul>
+          </li>
+          <li>Recent Commits:
+            <ul>
+              <li>[List of recent commits with short SHA, link, and first line of commit message]</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      ...other PRs...
+    </ul>
+
+    <h3>Reviewed Pull Requests</h3>
+
+    <p>Total PRs reviewed: {total_reviewed_prs}</p>
+
+    <h4>Summary of Reviewed PRs</h4>
+
+    {reviewed_pr_summary_html}
+
+    <h3>Summary of Work</h3>
+
+    [Provide a concise summary of the user's work for the week, including main
+    focus areas and significant contributions]
+
+    <h3>Notable Achievements</h3>
+
+    [Highlight any notable achievements or milestones reached during this
+    period]
+
+    <h3>Areas for Improvement</h3>
+
+    [Suggest areas of improvement or focus for the coming week, based on the
+    current work patterns]
+
+    <p>
+      Please ensure that the report is detailed but concise, highlighting the
+      most important aspects of the user's work this week. Use appropriate HTML
+      formatting for headings, lists, and links.
+    </p>
+  </body>
+</html>
