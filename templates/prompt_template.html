@@ -26,18 +26,18 @@
     [List all PRs in the format provided above]
     <ul>
       <li>
-        [PR Title 1] [PR Number](PR Link)
+        [PR Title 1] <a href="(PR Link)">[PR Number]</a>
         <ul></ul>
-          <li>Description: [Summary that describe the PR changes]</li>
+          <li>Description: [Short Summary that describe the PR changes]</li>
           <li>Status: [deployed to dev, in review, or other relevant status]</li>
-          <li>Key Changes Implemented
+          <li>Key Changes:
             <ul>
-              <li>[List key points of changes from commit messages]</li>
+              <li>[Combined Summary of changes from the overall PR in only 1-4 points]</li>
             </ul>
           </li>
           <li>Recent Commits:
             <ul>
-              <li>[List of recent commits with short SHA, link, and first line of commit message]</li>
+              <li>[List of all commits > {start_date} with short SHA, link, and first line of commit message]</li>
             </ul>
           </li>
         </ul>
@@ -50,23 +50,17 @@
     <p>Total PRs reviewed: {total_reviewed_prs}</p>
 
     <h4>Summary of Reviewed PRs</h4>
-
     {reviewed_pr_summary_html}
 
-    <h3>Summary of Work</h3>
+    <h3>Attends: </h3>
+    {meetings_html}
+    [exclude personal updates, only include work-related meetings]
+    [format the date and time in a human-readable format]
 
-    [Provide a concise summary of the user's work for the week, including main
-    focus areas and significant contributions]
-
-    <h3>Notable Achievements</h3>
-
-    [Highlight any notable achievements or milestones reached during this
-    period]
-
-    <h3>Areas for Improvement</h3>
-
-    [Suggest areas of improvement or focus for the coming week, based on the
-    current work patterns]
+    <h3>Next Steps</h3>
+    <h4>PRs Assigned for Review</h4>
+    {prs_to_review_html}
+    [Provide a brief analysis of the upcoming work based on the PRs awaiting review, including any potential challenges or areas that might require extra attention]
 
     <p>
       Please ensure that the report is detailed but concise, highlighting the
